@@ -24,3 +24,11 @@ Route::get('/test', function () {
         'message' => 'API Laravel siap dipakai'
     ]);
 });
+
+Route::get('/users', function () {
+    return response()->json([
+        ['id' => 1, 'name' => 'Rifqi'],
+        ['id' => 2, 'name' => 'Budi'],
+        ['id' => 3, 'name' => 'Siti'],
+    ]);
+});
