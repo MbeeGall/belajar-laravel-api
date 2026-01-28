@@ -32,3 +32,11 @@ Route::get('/users', function () {
         ['id' => 3, 'name' => 'Siti'],
     ]);
 });
+
+Route::post('/users', function (Request $request) {
+    return response()->json([
+        'status' => 'success',
+        'name' => $request->name,
+        'email' => $request->email
+    ]);
+});
